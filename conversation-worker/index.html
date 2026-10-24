@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Agent Blumee Conversation Worker, a personal Gmail account-pairing integration.">
+  <title>Agent Blumee Conversation Worker</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.65; overflow-wrap: break-word; }
+    h1, h2 { line-height: 1.25; }
+    h1 { font-size: 2rem; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    nav { margin-bottom: 2rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid; font-size: .9rem; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Conversation Worker navigation"><a href="index.html" aria-current="page">Home</a> &nbsp; | &nbsp; <a href="privacy.html">Privacy policy</a></nav>
+  <main>
+    <h1>Agent Blumee Conversation Worker</h1>
+    <p>A personal Gmail account-pairing integration operated by Marc Blumenthal.</p>
+    <h2>What the integration does</h2>
+    <p>The current worker verifies a private communication link between the owner's configured mailbox and the Agent Blumee mailbox. After authorization, it checks the agent mailbox's identity, sends one pairing challenge to the configured owner, and validates the corresponding sent message and reply.</p>
+    <p>The current version is limited to this pairing operation. It does not offer public registration or ongoing general inbox automation. Completing pairing does not authorize future message processing.</p>
+    <h2>Gmail access</h2>
+    <p>The integration requests <code>gmail.readonly</code> and <code>gmail.send</code>. These Google permissions allow reading messages and settings and sending email for the authorized mailbox. They are broader than the worker's limited pairing behavior; the application enforces that narrower behavior. The OAuth grant itself is not restricted to a particular message or conversation.</p>
+    <p>Read the <a href="privacy.html">privacy policy</a> for details about data use, service providers, retention, and revoking access.</p>
+    <h2>About this website</h2>
+    <p>This website contains the application description and privacy information. It contains no mailbox data, account credentials, OAuth tokens, private workflow exports, or operational evidence, and it provides no Google sign-in form.</p>
+    <p>For questions, use the application administrator's support email displayed in Google's consent screen.</p>
+  </main>
+  <footer>Agent Blumee Conversation Worker &middot; Personal-use integration &middot; <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
