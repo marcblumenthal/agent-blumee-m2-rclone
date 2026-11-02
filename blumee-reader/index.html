@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Purpose and Gmail read-only permission for the personal Blumee Reader connection.">
+  <title>Blumee Reader | Agent Blumee</title>
+  <style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 48rem; margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.68; }
+nav { display: flex; flex-wrap: wrap; gap: 1.2rem; border-bottom: 1px solid #8886; padding-bottom: 1rem; margin-bottom: 2.5rem; }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; margin: .35rem 0 1.15rem; }
+h2 { font-size: 1.25rem; margin-top: 2rem; line-height: 1.35; }
+p { margin: .8rem 0; }
+.eyebrow { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; opacity: .75; }
+.lede { font-size: 1.13rem; }
+.note { border-left: 3px solid currentColor; padding-left: 1rem; margin: 1.75rem 0; }
+code { overflow-wrap: anywhere; font-size: .95em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+footer { border-top: 1px solid #8886; margin-top: 3rem; padding-top: 1rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Blumee Reader navigation">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy policy</a>
+  </nav>
+  <main>
+    <header>
+      <p class="eyebrow">Agent Blumee &middot; Dedicated Gmail connection</p>
+      <h1>Blumee Reader</h1>
+      <p class="lede">A personal, read-only Gmail authorization for the Agent Blumee conversation system.</p>
+    </header>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">What Blumee Reader does</h2>
+      <p>Blumee Reader is intended for the operator's authorized Agent Blumee mailbox. During setup it verifies the OAuth grant and mailbox identity. After separately approved native deployment, it may read incoming emails and threads to recognize requests, build context, maintain conversation continuity, and prepare responses for review.</p>
+      <p>The Reader connection cannot send email, delete messages, or alter mailbox content through its requested Gmail permission. Sending, when separately enabled, belongs to the distinct <a href="../blumee-reply/">Blumee Reply</a> application.</p>
+    </section>
+    <section aria-labelledby="permission">
+      <h2 id="permission">Requested Google permission</h2>
+      <p><code>https://www.googleapis.com/auth/gmail.readonly</code></p>
+      <p>This scope permits reading messages, threads, metadata, and related mailbox information in the authorized Gmail account. It is a mailbox-wide grant, not permission limited by Google to individual senders, threads, or labels. The intended service applies separate operational controls.</p>
+    </section>
+    <section aria-labelledby="control">
+      <h2 id="control">Privacy and user control</h2>
+      <p>The <a href="privacy.html">Blumee Reader privacy policy</a> explains what information can be accessed, how it may be processed, where it may be retained, and how authorization can be revoked. Use of data received through Google APIs is subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+      <p class="note"><strong>Setup status:</strong> This informational site does not initiate an OAuth flow or activate production processing. Authorization setup and controlled production activation are separate steps.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For questions or a data-access request, contact <a href="mailto:agent.blumee@gmail.com">agent.blumee@gmail.com</a> or the application support address shown on Google's consent screen.</p>
+      <p>This site contains no inbox content, account credentials, OAuth tokens, or login forms.</p>
+    </section>
+  </main>
+  <footer>Blumee Reader &middot; Personal-use Agent Blumee integration &middot; <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
